@@ -1,0 +1,21 @@
+<!-- web.xml -->
+<web-app>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>LoginServlet</servlet-class>
+        <init-param>
+            <param-name>user1</param-name>
+            <param-value>password1</param-value>
+        </init-param>
+        <init-param>
+            <param-name>user2</param-name>
+            <param-value>password2</param-value>
+        </init-param>
+        <!-- Add more users as needed -->
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+</web-app>

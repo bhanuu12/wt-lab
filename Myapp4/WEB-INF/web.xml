@@ -1,0 +1,18 @@
+<web-app>
+    <servlet>
+        <servlet-name>SetCookieServlet</servlet-name>
+        <servlet-class>SetCookieServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetCookieServlet</servlet-name>
+        <servlet-class>GetCookieServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SetCookieServlet</servlet-name>
+        <url-pattern>/setCookie</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetCookieServlet</servlet-name>
+        <url-pattern>/getCookie</url-pattern>
+    </servlet-mapping>
+</web-app>
